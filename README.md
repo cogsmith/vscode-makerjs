@@ -1,4 +1,4 @@
-# VS Code MakerJS Preview Addon
+# VS Code <a href='https://maker.js.org'>MakerJS</a> Preview Addon
 
 ---
 
