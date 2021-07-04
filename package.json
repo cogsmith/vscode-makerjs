@@ -4,7 +4,7 @@
   "description": "Preview MakerJS Drawings Upon Saving",
   "icon": "media/logo.png",
   "publisher": "COGSMITH",
-  "version": "0.0.3",
+  "version": "0.0.4-dev",
   "repository": "https://github.com/cogsmith/vscode-makerjs",
   "engines": {
     "vscode": "^1.32.0"
