@@ -31,8 +31,9 @@
 
 # FEATURES
 
-* Render MakerJS SVG To File
-* Update Preview On Save
+* Renders MakerJS Models Inside VS Code
+* Saves Generated SVG Alongside JS Source
+* Update Preview Window Automatically On Save
 
 # HOWTO
 
