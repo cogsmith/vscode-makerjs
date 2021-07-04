@@ -1,43 +1,43 @@
 {
-    "name": "vscode-makerjs",
-    "displayName": "MakerJS Viewer",
-    "description": "Preview MakerJS Drawings Upon Saving",
-    "icon": "media/logo.png",
-    "publisher": "COGSMITH",
-    "version": "0.0.2-dev",
-    "repository": "https://github.com/cogsmith/vscode-makerjs",
-    "engines": {
-        "vscode": "^1.32.0"
+  "name": "vscode-makerjs",
+  "displayName": "MakerJS Viewer",
+  "description": "Preview MakerJS Drawings Upon Saving",
+  "icon": "media/logo.png",
+  "publisher": "COGSMITH",
+  "version": "0.0.2",
+  "repository": "https://github.com/cogsmith/vscode-makerjs",
+  "engines": {
+    "vscode": "^1.32.0"
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "menus": {
+      "editor/title/context": [
+        {
+          "when": "resourceLangId == javascript",
+          "command": "MAKERJS_WATCH",
+          "group": "navigation"
+        }
+      ]
     },
-    "activationEvents": [
-        "onStartupFinished"
-    ],
-    "main": "./extension.js",
-    "contributes": {
-        "menus": {
-            "editor/title/context": [
-                {
-                    "when": "resourceLangId == javascript",
-                    "command": "MAKERJS_WATCH",
-                    "group": "navigation"
-                }
-            ]
-        },
-        "commands": [
-            {
-                "command": "MAKERJS_WATCH",
-                "title": "MAKERJS_WATCH"
-            }
-        ]
-    },
-    "scripts": {},
-    "devDependencies": {
-        "@types/vscode": "^1.32.0"
-    },
-    "dependencies": {
-        "@cogsmith/xt": "^1.0.164",
-        "cheerio": "^1.0.0-rc.10",
-        "makerjs": "^0.17.1"
-    },
-    "versiontaglast": "0.0.1"
+    "commands": [
+      {
+        "command": "MAKERJS_WATCH",
+        "title": "MAKERJS_WATCH"
+      }
+    ]
+  },
+  "scripts": {},
+  "devDependencies": {
+    "@types/vscode": "^1.32.0"
+  },
+  "dependencies": {
+    "@cogsmith/xt": "^1.0.164",
+    "cheerio": "^1.0.0-rc.10",
+    "makerjs": "^0.17.1"
+  },
+  "versiontaglast": "0.0.2"
 }
