@@ -34,6 +34,11 @@
 * Preview MakerJS SVG 
 * Update Preview On Save
 
+# GUIDE
+
+* Right Click MakerJS Text File Header
+* Select MAKERJS_WATCH From Context Menu
+
 ---
 
 ![SCREENSHOT](SCREENSHOT.PNG)
