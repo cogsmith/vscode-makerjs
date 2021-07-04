@@ -31,7 +31,7 @@
 
 # FEATURES
 
-* Preview MakerJS SVG 
+* Render MakerJS SVG To File
 * Update Preview On Save
 
 # HOWTO
