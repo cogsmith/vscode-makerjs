@@ -1,5 +1,15 @@
 <code>
 
+# [0.0.3](https://github.com/cogsmith/vscode-makerjs/compare/0.0.3...main) @ [2021-07-03](https://github.com/cogsmith/vscode-makerjs/releases/tag/0.0.3) 
+
+## DIFF
+- [6 COMMITS SINCE LAST TAG = 0.0.2](https://github.com/cogsmith/vscode-makerjs/compare/0.0.2...0.0.3)
+
+</code>
+
+---
+<code>
+
 # [0.0.2](https://github.com/cogsmith/vscode-makerjs/compare/0.0.2...main) @ [2021-07-03](https://github.com/cogsmith/vscode-makerjs/releases/tag/0.0.2) 
 
 ## DIFF
