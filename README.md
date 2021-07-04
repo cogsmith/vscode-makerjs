@@ -34,7 +34,7 @@
 * Preview MakerJS SVG 
 * Update Preview On Save
 
-# GUIDE
+# HOWTO
 
 * Right Click MakerJS Text File Header
 * Select MAKERJS_WATCH From Context Menu
