@@ -29,7 +29,7 @@ let GetSVG = function (filepath) {
 const XT = require('@cogsmith/xt').Init();
 const App = XT.App; let LOG = console.log;
 
-if (0) {
+if (1) {
     App.InitLog = function () {
         let LOGCHANNEL = vscode.window.createOutputChannel('MAKERJS');
         //LOGCHANNEL.show();
@@ -56,14 +56,16 @@ GetHTML = function (filepath) {
     if (filebase == filebase.toUpperCase()) { ext = 'SVG'; }
     fs.writeFileSync(nodepath.dirname(filepath) + '/' + filebase + '.' + ext, svg);
 
-    let jq = cheerio.load(svg);
+    let svghtml = svg;
+
+    //let jq = cheerio.load(svg);
     //jq('SVG').attr({ height: '90%', width: '90%' });
     //jq('SVG').css({ stroke: '#ffffff' }); 
     //jq('*').css({ stroke: '#ffffff' }).attr({ stroke: '#ffffff' })
     //jq('*').each((x) => { jq(this).css({ stroke: '#ffffff' }).attr({ stroke: '#ffffff' }) });
-    //LOG(jq.html());
+    //svghtml = jq.html(); //LOG(html);
 
-    let table = "<div id='root'><center><table style='width:100%;height:100%'><tr><td align='center' valign='middle'>" + jq.html() + "<td></tr></table></center></div>";
+    let table = "<div id='root'><center><table style='width:100%;height:100%'><tr><td align='center' valign='middle'>" + svghtml + "<td></tr></table></center></div>";
     let html = "<html><head><style>center { height:100%; } #root, #root>div { width: 100%; height: 100%; } html,body { color:white;background-color:#3177C6;border:0px;margin:0px;padding:0px;width:100%;height:100% }</style></head><body><center>" + table + "</center></body></html>";
     return html;
 }
