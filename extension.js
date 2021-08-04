@@ -6,7 +6,6 @@ var nodepath = require('path');
 const fs = require('fs');
 
 const JSONFANCY = function (x) { return require('util').inspect(x, { colors: false, depth: null, breakLength: 1 }); };
-
 const DT = function () { return new Date().toISOString().substr(0, 19).replace('T', '|'); }
 
 //
@@ -30,18 +29,20 @@ let GetSVG = function (filepath) {
 const XT = require('@cogsmith/xt').Init();
 const App = XT.App; let LOG = console.log;
 
-App.InitLog = function () {
-    let LOGCHANNEL = vscode.window.createOutputChannel('MAKERJS');
-    LOGCHANNEL.show();
+if (0) {
+    App.InitLog = function () {
+        let LOGCHANNEL = vscode.window.createOutputChannel('MAKERJS');
+        //LOGCHANNEL.show();
 
-    let ADDONLOG = function (msg) {
-        if (typeof (msg) == 'object') { msg = JSONFANCY(msg); }
-        if (!msg) { msg = ""; }
-        msg = '[' + DT() + '] ' + msg;
-        LOGCHANNEL.appendLine(msg);
+        let ADDONLOG = function (msg) {
+            if (typeof (msg) == 'object') { msg = JSONFANCY(msg); }
+            if (!msg) { msg = ""; }
+            msg = '[' + DT() + '] ' + msg;
+            LOGCHANNEL.appendLine(msg);
+        }
+
+        LOG = ADDONLOG;
     }
-
-    LOG = ADDONLOG;
 }
 
 //
